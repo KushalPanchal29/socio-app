@@ -1,0 +1,211 @@
+.Header {
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Ensure Header is a containing block for absolute positioning */
+}
+.blur {
+    filter: blur(5px);
+    pointer-events: none; /* This prevents interaction with blurred elements */
+}
+
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+}
+
+.home-btn h1 {
+    margin-left: 12px;
+}
+
+.home-btn svg {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.home-btn:hover {
+    cursor: pointer;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    position: relative; /* Ensure search bar container is a containing block */
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-btn {
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 0.5px solid #555;
+    border-radius: 0 4px 4px 0;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.search-btn:hover {
+    background-color: #777;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links .profile, .new-user {
+    width: 65px;
+    margin-top: 6px;
+    padding: 0 20px;
+}
+
+.nav-links .chats {
+    width: 65px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.nav-links .chats:hover, .profile:hover, .new-user:hover {
+    cursor: pointer;
+}
+
+.profile {
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.new-user {
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.chats{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px; /* Adjust according to the header height */
+    right: 20px; /* Adjust according to your layout */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Adjust as necessary */
+}
+
+.dropdown-menu button {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.dropdown-menu button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Styles for search results */
+.search-results {
+    position: absolute;
+    top: 70px; /* Adjust according to header height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 10px;
+    /* height: 300px;
+    overflow-y: auto; */
+}
+
+.search-results h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #a0a0a0;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    padding-bottom: 15px;
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    max-height: 250px;
+    overflow-y:auto;
+}
+
+.search-results li {
+    display: flex;
+    align-items: center;
+}
+
+.other-profile-btn{
+    background-color: transparent;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 15px;
+    color: #717171;
+}
+
+.other-profile-btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.search-results li:last-child {
+    border-bottom: none;
+}
+.search-results img{
+    margin-right: 6px;
+}
