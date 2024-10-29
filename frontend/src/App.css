@@ -1,0 +1,35 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+  
+.main-body {
+display: flex;
+justify-content: space-between;
+flex: 1;
+overflow: hidden; /* Prevents scrolling on the main container */
+}
+
+.side-bar {
+flex: 1;
+border-right: 1px solid rgb(194, 194, 194);
+overflow: hidden; /* Prevents scrolling */
+}
+
+.main-scroll-bar {
+flex: 2;
+border-right: 1px solid rgb(194, 194, 194);
+overflow-y: auto; /* Allows vertical scrolling */
+}
+
+.games-bar {
+flex: 1;
+overflow: hidden; /* Prevents scrolling */
+}
+
+Header {
+position: fixed;
+width: 100%;
+z-index: 1000;
+}

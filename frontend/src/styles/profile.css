@@ -1,0 +1,74 @@
+.user-profile {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center; /* Center align content */
+    width: 300px; /* Adjust width as needed */
+    margin-left: 20px;
+    position: absolute;
+    top: 80px;
+    right: 16px;
+    z-index: 1000;
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+    
+  }
+
+  .profile-info img{
+    border-radius: 80px;
+    border: 1px solid rgb(126, 126, 126);
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
+  
+  .username {
+    color: #333; /* Darker text for username */
+    margin-bottom: 5px;
+    margin-top: 12px;
+  }
+  
+  .email {
+    color: #555; /* Slightly lighter text for email */
+    font-size: 0.9em;
+    margin-bottom: 30px;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+
+  .view-profile-btn{
+    background-color: #2158fd; /* Bootstrap danger color */
+    color: white;
+    margin-right: 5px;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+
+  .view-profile-btn:hover{
+    background-color: rgb(100, 154, 255);
+  }
+  
